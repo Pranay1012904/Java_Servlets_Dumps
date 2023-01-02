@@ -13,6 +13,10 @@
      	<param-name>Name</param-name>
      	<param-value>Pranay</param-value>
      </context-param>
+     <context-param>
+     	<param-name>Class</param-name>
+     	<param-value>MCA</param-value>
+     </context-param>
     <servlet>
     	<servlet-name>context</servlet-name>
     	<servlet-class>com.servlet.context.Test</servlet-class>

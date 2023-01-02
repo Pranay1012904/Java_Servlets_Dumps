@@ -18,7 +18,9 @@ public class Test extends HttpServlet {
 		PrintWriter out=resp.getWriter();
 		ServletContext context=getServletContext();
 		String name=context.getInitParameter("Name");
+		String classn=context.getInitParameter("Class");
 		out.print("NAME: "+name);
+		out.print("Class: "+classn);
 	}
 
 }
