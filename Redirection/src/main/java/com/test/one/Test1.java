@@ -17,14 +17,19 @@ public class Test1 extends HttpServlet {
 		resp.setContentType("text/html");
 		PrintWriter out=resp.getWriter();
 		
-		out.print("<html>");
+		/*
+		 * Redirect using HyperLinks !
+		 * (out.print("<html>");
 		out.print("<head>");
 		out.print("</head>");
 		out.print("<body>");
 		out.print("<h4>Ridirect to another servlet</h4>");
 		out.print("<a href='http://localhost:8090/Redirection/serv2'><button>Click Here</button></a>");
 		out.print("</body>");
-		out.print("</html>");
+		out.print("</html>");*/
+		//Redirection using setStatus()
+		resp.setStatus(HttpServletResponse.SC_MOVED_TEMPORARILY);
+		resp.setHeader("location","http://localhost:8090/Redirection/serv2");
 	}
 
 }
